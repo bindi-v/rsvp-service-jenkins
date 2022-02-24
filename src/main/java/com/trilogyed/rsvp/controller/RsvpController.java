@@ -15,6 +15,7 @@ public class RsvpController {
     @Autowired
     RsvpRepository repo;
 
+    // Post route to post rsvp
     @RequestMapping(value = "/rsvps", method = RequestMethod.POST)
     @ResponseStatus(HttpStatus.CREATED)
     public Rsvp createRsvp(@RequestBody Rsvp rsvp) {
